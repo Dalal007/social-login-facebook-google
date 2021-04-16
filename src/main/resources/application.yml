@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/socialdb
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      client:
+        registration:
+#          google:
+#            client-id: 250212527083-lclt36up8g1cair16b7hobhnb2ifo9bl.apps.googleusercontent.com
+#            client-secret: Lcgsq3GCHkZN3idSiV-hUySA
+#            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+#            scope:
+#              - email
+#              - profile
+          facebook:
+            clientId: 2273715539427106
+            clientSecret: ac019ddc17d8b44e84ed1c89ac8e8b3f
+            scope:
+              - email
+              - public_profile
+
